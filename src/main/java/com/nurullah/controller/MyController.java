@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api")
 public class MyController {
 
-     @GetMapping
+    @GetMapping
     public String hello() {
         return "Hello, make some CI/CD practice!!";
     }
 
+    @GetMapping("/docker")
+    public String dockerised() {
+        return "Hello from docker container";
+    }
 }
