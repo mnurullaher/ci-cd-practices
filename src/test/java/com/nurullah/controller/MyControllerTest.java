@@ -21,7 +21,7 @@ class MyControllerTest {
     public void should_return_hello() throws Exception {
         mockMvc.perform(get("/api"))
                 .andExpect(status().is(200))
-                .andExpect(jsonPath("$", Matchers.startsWith("Hello")));
+                .andExpect(jsonPath("$", Matchers.startsWith("unsuccess test")));
     }
 
 }
